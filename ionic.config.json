@@ -1,5 +1,8 @@
 {
   "name": "vehiculeMind",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
   "type": "angular"
 }

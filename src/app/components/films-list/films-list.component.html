@@ -1,0 +1,9 @@
+<ion-content>
+  <ion-card *ngFor="let film of films; let i = index" (click)="goToFilm(i)">
+    <ion-card-header>
+      <ion-card-subtitle>Episode {{film.episode_id}}</ion-card-subtitle>
+      <ion-card-title>{{film.title}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>{{film.director}}</ion-card-content>
+  </ion-card>
+</ion-content>

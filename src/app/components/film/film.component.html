@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Description
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">Close</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <h2>{{film.title}}</h2>
+        <p>Episode  {{film.episode_id}}</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Director</ion-label>
+      <ion-note slot="end">{{film.director}}</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Producer</ion-label>
+      <ion-note slot="end">{{film.producer}}</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Realease date</ion-label>
+      <ion-note slot="end">{{film.release_date}}</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <p>
+        {{film.opening_crawl}}
+      </p>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Characters</ion-label>
+      <ion-badge color="primary">{{film.characters.length}}</ion-badge>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Species</ion-label>
+      <ion-badge color="secondary">{{film.species.length}}</ion-badge>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Starships</ion-label>
+      <ion-badge color="tertiary">{{film.starships.length}}</ion-badge>
+    </ion-item>
+  </ion-list>
+</ion-content>
